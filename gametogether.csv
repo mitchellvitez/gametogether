@@ -1,0 +1,101 @@
+Title,Year,Genre,Platform,Hours,Total Hours
+Oregon Trail,1971,Role-playing,PC,2,2
+Space Invaders,1978,Shoot 'em up,Arcade,3,5
+Pac-Man,1980,Maze,Arcade,1,6
+Donkey Kong,1981,Platform,Arcade,1,7
+Galaga,1981,Shoot 'em up,Arcade,1,8
+Ms. Pac-Man,1982,Maze,Arcade,1,9
+Robotron,1982,Shoot 'em up,Arcade,2,11
+Punch-Out!!,1984,Sports,Arcade,3,14
+Elite,1984,Space simulation,BBC Micro,3,17
+Super Mario Bros.,1985,Platform,NES,2,19
+The Legend of Zelda,1986,Action-adventure,NES,9,28
+Metroid,1986,Platform-adventure,NES,8,36
+OutRun,1986,Racing,Arcade,1,37
+Contra,1987,Run and gun,Arcade,1,38
+Double Dragon,1987,Beat 'em up,Arcade,2,40
+R-Type,1987,Shoot 'em up,Arcade,2,42
+Tecmo Bowl,1987,Sports,Arcade,5,47
+Super Mario Bros. 3,1988,Platform,NES,5,52
+Mega Man 2,1988,Platform,NES,3,55
+Super Mario World,1990,Platform,Super NES,6,61
+The Legend of Zelda: A Link to the Past,1991,Action-adventure,Super NES,16,77
+Street Fighter II: The World Warrior,1991,Fighting,Arcade,2,79
+Sonic the Hedgehog,1991,Platform,Genesis/Mega Drive,2,81
+Final Fantasy IV,1991,Role-playing,Super NES,25,106
+Super Mario Kart,1992,Kart racing,Super NES,3,109
+Sonic the Hedgehog 2,1992,Platform,Genesis/Mega Drive,3,112
+Doom,1993,First-person shooter,PC,4,116
+Secret of Mana,1993,Action role-playing,Super NES,23,139
+The Legend of Zelda: Link's Awakening,1993,Action-adventure,Game Boy,15,154
+Gunstar Heroes,1993,Run and gun,Genesis/Mega Drive,2,156
+Daytona USA,1993,Racing,Arcade,1,157
+Super Metroid,1994,Platform-adventure,Super NES,8,165
+Final Fantasy VI,1994,Role-playing,Super NES,35,200
+EarthBound,1994,Role-playing,Super NES,28,228
+Star Wars: TIE Fighter,1994,Space simulation,PC,17,245
+Chrono Trigger,1995,Role-playing,Super NES,23,268
+Super Mario World 2: Yoshi's Island,1995,Platform,Super NES,8,276
+Super Mario 64,1996,Platform,Nintendo 64,14,290
+Resident Evil,1996,Survival horror,PlayStation,7,297
+Tomb Raider,1996,Action-adventure,Saturn,12,309
+Nights into Dreams...,1996,Action,Saturn,3,312
+Final Fantasy VII,1997,Role-playing,PlayStation,40,352
+GoldenEye 007,1997,First-person shooter,Nintendo 64,10,362
+Castlevania: Symphony of the Night,1997,Platform-adventure,PlayStation,9,371
+Star Fox 64,1997,Shoot 'em up,Nintendo 64,2,373
+Final Fantasy Tactics,1997,Tactical role-playing,PlayStation,38,411
+The Legend of Zelda: Ocarina of Time,1998,Action-adventure,Nintendo 64,27,438
+Metal Gear Solid,1998,Stealth,PlayStation,11,449
+Pokémon Red and Blue,1998,Role-playing,Game Boy,27,476
+SoulCalibur,1998,Fighting,Dreamcast,1,477
+StarCraft,1998,Real-time strategy,PC,25,502
+Half-Life,1998,First-person shooter,PC,12,514
+Resident Evil 2,1998,Survival horror,PlayStation,6,520
+Xenogears,1998,Role-playing,PlayStation,56,576
+Shenmue,1999,Adventure,Dreamcast,21,597
+Diablo II,2000,Action role-playing,PC,34,631
+The Legend of Zelda: Majora's Mask,2000,Action-adventure,Nintendo 64,20,651
+Deus Ex,2000,Role-playing shooter,PC,24,675
+Counter-Strike,2000,First-person shooter,PC,50,725
+Perfect Dark,2000,First-person shooter,Nintendo 64,9,734
+Skies of Arcadia,2000,Role-playing,Dreamcast,47,781
+Super Smash Bros. Melee,2001,Fighting,GameCube,9,790
+Halo: Combat Evolved,2001,First-person shooter,Xbox,10,800
+Metal Gear Solid 2: Sons of Liberty,2001,Stealth,PlayStation 2,13,813
+Advance Wars,2001,Turn-based tactics,Game Boy Advance,14,827
+Ico,2001,Action-adventure,PlayStation 2,7,834
+Silent Hill 2,2001,Survival horror,PlayStation 2,8,842
+Final Fantasy X,2001,Role-playing,PlayStation 2,49,891
+Grand Theft Auto III,2001,Action-adventure,PlayStation 2,17,908
+Metroid Prime,2002,Action-adventure,GameCube,14,922
+The Legend of Zelda: The Wind Waker,2002,Action-adventure,GameCube,29,951
+Kingdom Hearts,2002,Action role-playing,PlayStation 2,28,979
+Star Wars: Knights of the Old Republic,2003,Role-playing,Xbox,29,1008
+Prince of Persia: The Sands of Time,2003,Action-adventure,PlayStation 2,9,1017
+Half-Life 2,2004,First-person shooter,PC,13,1030
+World of Warcraft,2004,MMORPG,PC,50,1080
+Metal Gear Solid 3: Snake Eater,2004,Stealth,PlayStation 2,16,1096
+Grand Theft Auto: San Andreas,2004,Action-adventure,PlayStation 2,34,1130
+Resident Evil 4,2005,Survival horror,GameCube,16,1146
+Shadow of the Colossus,2005,Action-adventure,PlayStation 2,10,1156
+Ōkami,2006,Action-adventure,PlayStation 2,37,1193
+BioShock,2007,First-person shooter,"PC, Xbox 360",12,1205
+Super Mario Galaxy,2007,Platform,Wii,15,1220
+Call of Duty 4: Modern Warfare,2007,First-person shooter,"PC, PlayStation 3, Xbox 360",7,1227
+Fallout 3,2008,Role-playing shooter,"PC, PlayStation 3, Xbox 360",23,1250
+Grand Theft Auto IV,2008,Action-adventure,"PlayStation 3, Xbox 360",28,1278
+Uncharted 2: Among Thieves,2009,Action-adventure,PlayStation 3,11,1289
+Mass Effect 2,2010,Role-playing shooter,"PC, Xbox 360",25,1314
+Red Dead Redemption,2010,Action-adventure,"PlayStation 3, Xbox 360",18,1332
+Super Mario Galaxy 2,2010,Platform,Wii,14,1346
+Portal 2,2011,Puzzle platformer,"PC, PlayStation 3, Xbox 360",9,1355
+Dark Souls,2011,Action role-playing,"PlayStation 3, Xbox 360",49,1404
+The Elder Scrolls V: Skyrim,2011,Action role-playing,"PC, PlayStation 3, Xbox 360",32,1436
+Batman: Arkham City,2011,Action-adventure,"PlayStation 3, Xbox 360",13,1449
+Journey,2012,Adventure,PlayStation 3,2,1451
+The Last of Us,2013,Survival horror,PlayStation 3,15,1466
+Dragon Age Inquisition,2014,Action role-playing,"PC, PlayStation 4, Xbox One",45,1511
+Grand Theft Auto V,2013,Action-adventure,"PC, PlayStation 3, Xbox 360",31,1542
+The Witcher 3,2015,Role-playing,"PC, PlayStation 4, Xbox One",47,1589
+Uncharted 4: A Thief's End,2016,Action-adventure,PlayStation 4,15,1604
