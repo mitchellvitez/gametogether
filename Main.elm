@@ -33,23 +33,37 @@ type alias Game =
 
 view model =
   div []
-    [ input 
-        [ onInput Change 
+    [ navbar model
+    , div [ class "game-list" ] (List.map gameView model.games)
+    , Html.node "link"
+        [ Html.Attributes.rel "stylesheet"
+        , Html.Attributes.href "style.css" 
+        ] []
+    , div [ class "rainbow-wrapper" ] []
+    ]
+
+navbar model = 
+    div [ id "navbar"]
+    [ h1 [ class "heading" ] [ text "Game Together" ]
+    , input 
+        [ class "search-box"
+        , onInput Change 
         , placeholder "Search for a game"
-        ] 
-        [] 
-    , div [] (List.map gameView model.games)
+        ] []
     ]
 
 gameView game =
-    div []
-        [ h2 [] [ text game.title ]
-        , h3 [] [ text <| toString game.year ]
-        , text <| game.genre
-        , div []
-            (List.map text game.platforms)
-        , text <| toString game.hours ++ " hours"
+    div [ class "game-view" ]
+        [ h2 [ class "game-title" ] [ text game.title ]
+        , p [ class "game-year" ] [ text <| toString game.year ]
+        , p [] [ text <| game.genre ]
+        , platformsView game.platforms
+        , p [] [ text <| toString game.hours ++ " hours" ]
         ]
+
+platformsView platforms =
+    p []
+    (List.map text platforms)
 
 type Msg =
     Change String
