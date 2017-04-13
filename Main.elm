@@ -15,12 +15,14 @@ init =
     { allGames = allGames
     , games = allGames
     , query = ""
+    , order = Chronological
     }
 
 type alias Model = 
     { allGames : List Game -- All games
     , games : List Game -- Games that are displayed
     , query : String
+    , order : Order
     }
 
 type alias Game =
@@ -45,12 +47,24 @@ view model =
 navbar model = 
     div [ id "navbar"]
     [ h1 [ class "heading" ] [ text "Game Together" ]
+    , fieldset [ class "sort-order" ]
+        [ sortOption Alphabetical model
+        , sortOption Chronological model
+        ]
     , input 
         [ class "search-box"
         , onInput Change 
         , placeholder "Search for a game"
         ] []
     ]
+
+sortOption order model =
+    let color = if order == model.order then "white" else "#777777"
+    in
+    div [ onClick (Sort order) 
+        , style [ ("color", color) ]
+        ]
+        [ text <| toString order ]
 
 gameView game =
     div [ class "game-view" ]
@@ -74,8 +88,11 @@ platformView platform =
     li []
     [ text platform ]
 
+type Order = Alphabetical | Chronological
+
 type Msg =
-    Change String
+      Change String
+    | Sort Order
 
 update msg model =
     case msg of
@@ -84,6 +101,19 @@ update msg model =
             | query = q 
             , games = filtered q model
             }
+
+        Sort order ->
+            case order of 
+                Alphabetical ->
+                    { model 
+                    | games = List.sortBy .title model.games
+                    , order = order
+                    }
+                Chronological ->
+                    { model 
+                    | games = List.sortBy .year model.games
+                    , order = order
+                    }
 
 filtered query model =
     List.filter 

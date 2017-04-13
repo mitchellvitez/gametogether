@@ -41,7 +41,7 @@ input {
 .game-title {
     display: inline-block;
     margin: 0;
-    margin-right: 16px;
+    margin-right: 96px;
     font-size: 1.8em;
 }
 
@@ -79,6 +79,18 @@ input {
     top: 0;
     left: 0;
     height: 80px;
+}
+
+.sort-order {
+    display: inline-block;
+    float: right;
+    border: none;
+    line-height: 20px;
+    margin: 16px;
+    color: #777777;
+}
+.sort-order:hover {
+    cursor : pointer;
 }
 
 @media (max-width: 600px) {
