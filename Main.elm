@@ -56,14 +56,23 @@ gameView game =
     div [ class "game-view" ]
         [ h2 [ class "game-title" ] [ text game.title ]
         , p [ class "game-year" ] [ text <| toString game.year ]
-        , p [] [ text <| game.genre ]
+        , p [ class "game-genre" ] [ text <| game.genre ]
         , platformsView game.platforms
-        , p [] [ text <| toString game.hours ++ " hours" ]
+        , p [ class "game-hours" ] [ text <| toString game.hours ++ " hour" ++ plural game.hours ]
         ]
 
+plural n =
+    if n == 1 then "" else "s"
+
 platformsView platforms =
-    p []
-    (List.map text platforms)
+    div [ class "game-platforms-list" ]
+    [ ul [ class "game-platforms" ]
+        (List.map platformView platforms)
+    ]
+
+platformView platform =
+    li []
+    [ text platform ]
 
 type Msg =
     Change String

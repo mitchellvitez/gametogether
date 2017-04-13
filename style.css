@@ -42,7 +42,7 @@ input {
     display: inline-block;
     margin: 0;
     margin-right: 16px;
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 
 .game-year {
@@ -50,6 +50,25 @@ input {
     margin: 0;
     float: right;
     font-size: 1.5em;
+}
+
+.game-genre {
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0;
+    text-transform: italic;
+}
+
+.game-hours {
+    float: right;
+}
+
+.game-platforms {
+    padding-left: 21px;   
+    margin-bottom: 0;
+}
+.game-platforms-list {
+    display: inline-block;
 }
 
 #navbar {
