@@ -3,10 +3,6 @@
 body {
     font-size: 1.2em;
     font-family: 'Istok Web', sans-serif;
-    display: flex;
-    flex-flow: row; 
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: #444444;
 }
 
@@ -28,14 +24,19 @@ input {
     border: 4px solid #dddddd;
     border-radius: 8px;
     padding: 16px;
-    flex: 0 0 100%; 
-    flex-basis: 200px;
+    flex: 1 1 100%; 
+    flex-basis: 400px;
+    max-width: 400px;
     background-color: white;
-    min-width: 300px;
+    display: inline-block;
 }
 
 .game-list {
     margin-top: 96px;
+    display: flex;
+    flex-flow: row; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .game-title {
