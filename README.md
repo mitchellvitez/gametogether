@@ -8,7 +8,7 @@ Built with Elm, Spring 2017
 
 `elm-reactor` to see live changes
 
-`elm-make Web.elm` generates index.html
+`elm-make src/Web.elm` generates index.html
 
 Make mobile version with `Mobile.elm` and [instructions from Elm Native UI README](https://github.com/ohanhi/elm-native-ui)
 
@@ -16,10 +16,10 @@ Make mobile version with `Mobile.elm` and [instructions from Elm Native UI READM
 
 Website
 
-![gametogether web app screenshot](/web.png?raw=true)
+![gametogether web app screenshot](/images/web.png?raw=true)
 
 Mobile app
 
-![gametogether mobile app screenshot](/mobile.png?raw=true)
+![gametogether mobile app screenshot](/images/mobile.png?raw=true)
 
 
