@@ -1,6 +1,6 @@
-# game_together
+# Game Together
 
-Site for project of playing 100 of the best games of all time
+Website and Android/iOS apps for project of playing 100 of the best games of all time
 
 Built with Elm, Spring 2017
 
@@ -8,4 +8,6 @@ Built with Elm, Spring 2017
 
 `elm-reactor` to see live changes
 
-`elm-make Main.elm` generates index.html
+`elm-make Web.elm` generates index.html
+
+Make mobile version with `Mobile.elm` and [instructions from Elm Native UI README](https://github.com/ohanhi/elm-native-ui)
