@@ -31,6 +31,11 @@ input {
     display: inline-block;
 }
 
+.played {
+    background-color: #dddddd;
+    border-color: #777777;
+}
+
 .game-list {
     margin-top: 96px;
     display: flex;
@@ -42,8 +47,9 @@ input {
 .game-title {
     display: inline-block;
     margin: 0;
-    margin-right: 96px;
+    margin-right: 16px;
     font-size: 1.8em;
+    max-width: 80%;
 }
 
 .game-year {
@@ -87,7 +93,7 @@ input {
     float: right;
     border: none;
     line-height: 20px;
-    margin: 16px;
+    margin: 5px;
     color: #777777;
 }
 .sort-order:hover {

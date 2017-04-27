@@ -1,37 +1,20 @@
+module Main exposing (..)
+
 import Games exposing (allGames)
 import Html exposing (..)
+import App exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick, onInput)
-import List exposing (map)
+import List exposing (map, sortBy)
+import String exposing (padLeft)
 
 main =
-  beginnerProgram 
-      { model = init
+  Html.program 
+      { init = init
       , view = view
       , update = update 
+      , subscriptions = \model -> Sub.none
       }
-
-init =
-    { allGames = allGames
-    , games = allGames
-    , query = ""
-    , order = Chronological
-    }
-
-type alias Model = 
-    { allGames : List Game -- All games
-    , games : List Game -- Games that are displayed
-    , query : String
-    , order : Order
-    }
-
-type alias Game =
-    { title : String
-    , year : Int
-    , genre : String
-    , platforms : List String
-    , hours : Int
-    }
 
 view model =
   div []
@@ -50,10 +33,11 @@ navbar model =
     , fieldset [ class "sort-order" ]
         [ sortOption Alphabetical model
         , sortOption Chronological model
+        , sortOption Playtime model
         ]
     , input 
         [ class "search-box"
-        , onInput Change 
+        , onInput UpdateQuery 
         , placeholder "Search for a game"
         ] []
     ]
@@ -67,12 +51,15 @@ sortOption order model =
         [ text <| toString order ]
 
 gameView game =
-    div [ class "game-view" ]
+    let gameClass = if game.played then "game-view played" else "game-view"
+    in
+    div [ class gameClass ]
         [ h2 [ class "game-title" ] [ text game.title ]
         , p [ class "game-year" ] [ text <| toString game.year ]
         , p [ class "game-genre" ] [ text <| game.genre ]
         , platformsView game.platforms
-        , p [ class "game-hours" ] [ text <| toString game.hours ++ " hour" ++ plural game.hours ]
+        , p [ class "game-hours" ] 
+            [ text <| toString game.hours ++ " hour" ++ plural game.hours ]
         ]
 
 plural n =
@@ -87,38 +74,4 @@ platformsView platforms =
 platformView platform =
     li []
     [ text platform ]
-
-type Order = Alphabetical | Chronological
-
-type Msg =
-      Change String
-    | Sort Order
-
-update msg model =
-    case msg of
-        Change q ->
-            { model 
-            | query = q 
-            , games = filtered q model
-            }
-
-        Sort order ->
-            case order of 
-                Alphabetical ->
-                    { model 
-                    | games = List.sortBy .title model.games
-                    , order = order
-                    }
-                Chronological ->
-                    { model 
-                    | games = List.sortBy .year model.games
-                    , order = order
-                    }
-
-filtered query model =
-    List.filter 
-        (String.startsWith (String.toLower query)
-        << String.toLower
-        << .title)
-        model.allGames
 
