@@ -1,6 +1,6 @@
-# game_together
+# Game Together
 
-Site for project of playing 100 of the best games of all time
+Website and Android/iOS apps for project of playing 100 of the best games of all time
 
 Built with Elm, Spring 2017
 
